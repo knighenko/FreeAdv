@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:onClick="onClickBtnSend"
+        android:text="@string/btnWatch"
+
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="113dp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="onClickBtnNext"
+        android:text="@string/next"
+        app:layout_constraintStart_toEndOf="@+id/btnPrev"
+        app:layout_constraintTop_toBottomOf="@+id/btnSend"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="61dp" />
+
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnPrev"
+        android:text="@string/previous"
+        app:layout_constraintTop_toBottomOf="@id/btnSend"
+        tools:ignore="MissingConstraints" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listAdvRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
