@@ -18,7 +18,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<Advertisement> advertisements;
-    private RecyclerView titleList;
     private int listIndex;
     private RecyclerView listAdvRecyclerView;
     private AdvAdapter advAdapter;
